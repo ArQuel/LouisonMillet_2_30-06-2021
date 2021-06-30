@@ -41,10 +41,6 @@ search {
     padding-left: 50px;
 }
 
-.Rechercher{
-    
-}
-
 .site-search {
     margin-left: 50px;
     border: none;
@@ -63,6 +59,8 @@ search {
         margin-left: -3px;
         padding: 15px 15px;
         text-align: center;
+        /* Retirer le soulignement */
+        text-decoration: none; 
         display: inline-block;
         font-size: 16px;
         border-radius: 0px 45px 45px 0px;
