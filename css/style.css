@@ -42,13 +42,19 @@ search {
 }
 
 .site-search {
-    border:none;
+    border:solid;
+    border-color: #F2f2f2;
     border-width: 1px;
     background-color: rgb(250, 250, 250);
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
+}
+
+input::placeholder{
+    font-weight: bold;
+    color:black;
 }
 
 .Bouton_rechercher {
@@ -64,6 +70,9 @@ search {
         font-size: 16px;
         border-radius: 0px 45px 45px 0px;
     }
+.Bouton_rechercher:hover{
+    background-color: #3988ff;
+}
 
     .icone_map {
         background-color: #f2f2f2;
@@ -72,17 +81,40 @@ search {
         margin-right: -4px;
         padding-right: 15px;
         padding-left: 20px;
-        padding-top: 9px;
-        padding-bottom: 16px;
-        text-align: center;
-        /* Retirer le soulignement */
-        text-decoration: none; 
-        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 17px;
         border-radius: 45px 0px 0px 45px;
     }
     .Rechercher{
-        float: left;
-    }
+        display:inline-block    
+}
+
     .filtres{
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    
+    .filtres_titre{
+        font-size: 22px;
+        padding-right: 75px;
+    }
+
+    .filtres_cercle{
+        padding: 10px 10px 10px 10px;
+        border-radius: 20px;
+        background: #deebff;
+    }
+    .filtres_nom{
+        border: solid;
+        border-color: #d9d9d9;
+        border-width: 2px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 5px;
+        padding-bottom: 8px;
+        border-radius: 0px 45px 45px 0px;
+        margin-left: -15px;
+        font-size: 18px;
+        font-weight: bold;
     }
 }
