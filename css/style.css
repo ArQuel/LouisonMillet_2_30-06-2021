@@ -42,13 +42,12 @@ search {
 }
 
 .site-search {
-    margin-left: 50px;
-    border: none;
-    background-color: rgba(197, 197, 197, 0.301);
+    border:none;
+    border-width: 1px;
+    background-color: rgb(250, 250, 250);
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
-    text-decoration: none;
     font-size: 16px;
 }
 
@@ -56,7 +55,7 @@ search {
         background-color: #0065fc;
         border: none;
         color: white;
-        margin-left: -3px;
+        margin-left: -4px;
         padding: 15px 15px;
         text-align: center;
         /* Retirer le soulignement */
@@ -64,5 +63,26 @@ search {
         display: inline-block;
         font-size: 16px;
         border-radius: 0px 45px 45px 0px;
+    }
+
+    .icone_map {
+        background-color: #f2f2f2;
+        border: none;
+        margin-left: 50px;
+        margin-right: -4px;
+        padding-right: 15px;
+        padding-left: 20px;
+        padding-top: 9px;
+        padding-bottom: 16px;
+        text-align: center;
+        /* Retirer le soulignement */
+        text-decoration: none; 
+        display: inline-block;
+        border-radius: 45px 0px 0px 45px;
+    }
+    .Rechercher{
+        float: left;
+    }
+    .filtres{
     }
 }
