@@ -112,6 +112,7 @@ input::placeholder{
         border-radius: 20px;
         background: #deebff;
     }
+
     .filtres_nom{
         position: relative;
         border: solid;
@@ -125,6 +126,7 @@ input::placeholder{
         margin-left: -15px;
         font-size: 18px;
         font-weight: bold;
+        /* Gérer la transparence de la bordure derrière le cercle */
         z-index: -1;
     }
 
@@ -147,5 +149,58 @@ input::placeholder{
         background-color: blue;
         /* Couper les coins qu'il reste */
         border-radius: 20px;
+    }
+
+    /* Containers */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        margin-left: 50px;
+        height: 300px;
+        width: 60%;
+        background-color: #f2f2f2;
+        border-radius: 25px;
+        padding-left: 2em;
+        padding-top: 2em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+    }
+
+
+    .container h2 {
+        height: 30px;
+    }
+
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 50px;
+        margin-top: 80px;
+        width: 25%;
+        background-color: #f2f2f2;
+        border-radius: 25px;
+        padding-left: 2em;
+        padding-top: 2em;
+        padding-right: 2em;
+    }
+
+    .card {
+        max-width: 225px;
+        max-height: 350px;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 0.8em;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        align-items: center;
+    }
+
+    .card_pic{
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 25px;
     }
 }
