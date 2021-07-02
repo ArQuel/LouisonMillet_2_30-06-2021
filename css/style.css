@@ -230,9 +230,7 @@ input::placeholder{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 0.8em;
         border-radius: 25px;
-        background-color: white;
         margin-top: 25px;
     }
 
@@ -242,6 +240,7 @@ input::placeholder{
         border-radius: 25px;
         display: flex;
         background-color: white;
+        margin-top: 25px;
     }
 
     .desc {
@@ -254,4 +253,5 @@ input::placeholder{
         border-radius: 25px;
     }
     
+
 }
