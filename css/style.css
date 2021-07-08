@@ -11,18 +11,22 @@ html, body {
     font-family: 'Raleway';
 }
 
+main{
+    margin-left: 50px;
+
+}
+
+
 /* Propriétés du logo */
 #logo {
-    float: left;
-    width: 200px;
-    height: 50px;
+    width: 100px;
 }
 
 /* Propriétés du menu de navigation */
-header h3 {
-    float: right;
-    margin-right: 50px;
-    padding-right: 30px;
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     color: blue;
 }
 
@@ -30,15 +34,33 @@ header h3:hover {
     color: black;
 }
 
+nav{
+    display: flex;
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hébergements{
+    margin-right: 50px;
+}
+
+.activités{
+    margin-right: 50px,
+}
+
+.
+
+
+
 /* Champ rechercher */
 
     /* Titres */
-.ChercherHb, .ChercherHbtitre {
-    padding-left: 50px;
-}
 
 .ChercherHbtitre {
-    padding-top: 150px;
     font-weight: bolder;
 }
 
@@ -86,7 +108,6 @@ input::placeholder{
     .icone_map {
         background-color: #f2f2f2;
         border: none;
-        margin-left: 50px;
         margin-right: -4px;
         padding-right: 15px;
         padding-left: 20px;
@@ -95,19 +116,19 @@ input::placeholder{
         border-radius: 45px 0px 0px 45px;
     }
 
-    .Rechercher{
-        display:inline-block    
-}
 
 /* Section filtres */
     .filtres{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin-top: 50px;
-        margin-left: 50px;
+        width: 75%;
+        justify-content: space-between;
     }
     
     .filtres_titre{
         font-size: 22px;
-        padding-right: 75px;
     }
 
     .filtres_cercle{
@@ -121,7 +142,6 @@ input::placeholder{
     }
 
     .filtres_nom{
-        position: relative;
         border: solid;
         border-color: #d9d9d9;
         border-width: 2px;
@@ -138,8 +158,8 @@ input::placeholder{
     }
 
     .filtres_element{
-        margin-left: 50px;
-        margin-right: 50px;
+        display: flex;
+
     }
 
     .filtres_element:hover{
@@ -149,7 +169,6 @@ input::placeholder{
 /* Phrase informative */
     .info {
         margin-top: 50px;
-        margin-left: 50px;
     }
 
     /* Créer une transparence pour fond bleu de l'icone info */
@@ -172,7 +191,6 @@ input::placeholder{
     .container {
         flex: 2;
         margin-top: 80px;
-        margin-left: 50px;
         background-color: #f2f2f2;
         border-radius: 25px;
         padding-left: 2em;
