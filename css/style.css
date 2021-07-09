@@ -13,6 +13,7 @@ html, body {
 
 main{
     margin-left: 50px;
+    margin-right: 50px;
 
 }
 
@@ -23,37 +24,44 @@ main{
 }
 
 /* Propriétés du menu de navigation */
-header {
+  .logo{
+    margin-right: auto;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    color: blue;
-}
-
-header h3:hover {
-    color: black;
-}
-
-nav{
+    align-items: center;
+    width: 97px;
+    height: 90px;
+    margin-left: 0px;
+    order: 1;
+  }
+   .navbar {
     display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .header-nav {
+    margin: 40px 0;
+    order: 2;
+  }
+  .header-nav a {
+    padding: 0px 30px;
+  }
+  a {
     text-decoration: none;
-}
-
-.menu{
-    display: flex;
-    justify-content: space-between;
-}
-
-.hébergements{
-    margin-right: 50px;
-}
-
-.activités{
-    margin-right: 50px,
-}
-
-.
-
+    color: black;
+  }
+  .header-nav a:hover {
+    border-top: 2px solid #0065fc;
+    color: #0065fc;
+    padding-top: 30px;
+    font-weight: bold;
+  }
+  .inscription{
+   color: #0065FC;
+   display: flex;
+   align-items: center;
+   padding: 0px 30px;
+   order: 3;
+  }
 
 
 /* Champ rechercher */
@@ -317,25 +325,19 @@ input::placeholder{
     }
 
     .card_activité_verticale{
+        border-radius: 25px;
         -webkit-box-shadow: 2px 2px 14px 15px rgba(50, 50, 50, 0.21);
         -moz-box-shadow:    2px 2px 14px 15px rgba(50, 50, 50, 0.21);
         box-shadow:         2px 2px 14px 15px rgba(50, 50, 50, 0.21);
-        border-radius: 25px;
-        max-width: 294px;
     }
 
     .card_activité_horizontale {
+        border-radius: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
         -webkit-box-shadow: 2px 2px 14px 15px rgba(50, 50, 50, 0.21);
         -moz-box-shadow:    2px 2px 14px 15px rgba(50, 50, 50, 0.21);
         box-shadow:         2px 2px 14px 15px rgba(50, 50, 50, 0.21);
-        border-radius: 25px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        max-height: 250px;
     }
 
     .activité_horizontale_pic{
@@ -345,6 +347,17 @@ input::placeholder{
     .card_activité_verticale h3, .card_activité_horizontale h3{
         margin-left: 15px;
         padding-bottom: 20px;
+        margin-bottom: 0px;
+
+    }
+
+    .card_activité_horizontale:nth-child(1){
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+    .card_activité_horizontale:nth-child(2){
+        margin-bottom: 0px;
     }
 
     /* Footer */
