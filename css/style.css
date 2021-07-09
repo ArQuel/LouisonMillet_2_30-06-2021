@@ -24,6 +24,7 @@ main{
 }
 
 /* Propriétés du menu de navigation */
+
   .logo{
     margin-right: auto;
     display: flex;
@@ -33,18 +34,22 @@ main{
     margin-left: 0px;
     order: 1;
   }
+
    .navbar {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
   }
+
   .header-nav {
     margin: 40px 0;
     order: 2;
   }
+
   .header-nav a {
     padding: 0px 30px;
   }
+
   a {
     text-decoration: none;
     color: black;
