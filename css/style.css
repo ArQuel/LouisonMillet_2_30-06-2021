@@ -29,8 +29,7 @@ main{
     margin-right: auto;
     display: flex;
     align-items: center;
-    width: 97px;
-    height: 90px;
+    width: 100px;
     margin-left: 0px;
     order: 1;
   }
@@ -41,12 +40,12 @@ main{
     margin-bottom: 20px;
   }
 
-  .header-nav {
+  .menu-nav {
     margin: 40px 0;
     order: 2;
   }
 
-  .header-nav a {
+  .menu-nav a {
     padding: 0px 30px;
   }
 
@@ -54,12 +53,14 @@ main{
     text-decoration: none;
     color: black;
   }
-  .header-nav a:hover {
+
+  .menu-nav a:hover {
     border-top: 2px solid #0065fc;
     color: #0065fc;
     padding-top: 30px;
     font-weight: bold;
   }
+
   .inscription{
    color: #0065FC;
    display: flex;
@@ -113,6 +114,7 @@ input::placeholder{
         font-size: 16px;
         border-radius: 0px 45px 45px 0px;
     }
+    
 .Bouton_rechercher:hover{
     background-color: #3988ff;
 }
@@ -209,7 +211,7 @@ input::placeholder{
         padding-left: 2em;
         padding-top: 2em;
         padding-right: 2em;
-        padding-bottom: 2em;
+        padding-bottom: 4em;
         max-width: 1100px;
     }
 
@@ -398,8 +400,128 @@ input::placeholder{
 
     /* Résolution pour Iphone8 */
         @media only screen and (min-width: 320px)and (max-width:599px) {
+
+            main{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .header{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                margin: 0px;
+            }
+
+            .navbar{
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            .logo{
+                margin-left: 20px;
+                order: 1;
+            }
+
+            .inscription {
+                margin-right: 20px;
+                order: 2;
+            }
+
+            .menu-nav{
+                display: flex;
+                width: 100%;
+                margin: 0px;
+                order: 3;
+            }
+
+            .menu-nav a {
+                display: flex;
+                justify-content: center;
+                width: 50%;
+                border-bottom: 2px solid #F2F2F2;
+                padding: 30px 0px;
+            }
+          
+            .menu-nav a:hover{
+                border-top: none;
+                border-bottom: 3px solid #0065FC;   
+            }
+
+            .logo .inscription{
+                display: flex;
+                flex-direction: row;
+            }
+
             .icone_map{
                 margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .site-search {
+                border:solid;
+                border-color: #F2f2f2;
+                border-width: 1px;
+                background-color: rgb(250, 250, 250);
+                text-align: center;
+                font-size: 16px;
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+
+            .Bouton_rechercher {
+                background-color: #0065fc;
+                border: none;
+                color: white;
+                margin-left: -4px;
+                padding: 15px 0px;
+                text-align: center;
+                /* Retirer le soulignement */
+                text-decoration: none; 
+                font-size: 16px;
+                border-radius: 0px 45px 45px 0px;
+            }
+
+            .filtres{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 50px;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .footer_flex{
+                background-color: #f2f2f2;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 30px;
+            }
+
+            .footer_flex2{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .footer_flex2:nth-child(1){
+                margin-left: 0px;
+            }
+
+            .section_contenair{
+                display: flex;
+                flex-direction: column;
+                margin-top: 0px;
+            }
+
+            .container2{
+                margin-left: 0px;
+            }
+
+            .card_activité_verticale{
+                margin-bottom: 20px;
+                margin-top: 20px;
             }
     }
-}
+
