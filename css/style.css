@@ -506,13 +506,14 @@ input::placeholder{
             .container{
                 order: 2;
                 margin-top: 40px;
+                background-color: transparent;
             }
 
             .container2{
                 order: 1;
                 margin-top: 40px;
                 margin-left: 0px;
-                padding-left: 10px;
+                padding-left: 25px;
                 border-radius: 0px;
                 padding-right: 50px;
                 width: auto;
