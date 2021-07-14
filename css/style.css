@@ -205,7 +205,6 @@ input::placeholder{
     }
 
     .container {
-        flex: 2;
         margin-top: 80px;
         background-color: #f2f2f2;
         border-radius: 25px;
@@ -213,7 +212,7 @@ input::placeholder{
         padding-top: 2em;
         padding-right: 2em;
         padding-bottom: 4em;
-        max-width: 1100px;
+        width: 880px;
     }
 
     .container h2{
@@ -229,22 +228,20 @@ input::placeholder{
     .cards {
         display: flex;
         flex-wrap: wrap;
-        margin: 20px;
     }
 
     .card {
         display: flex;
         flex-wrap: wrap;
         margin-left: 20px;
-        margin-right: 20px;
         padding: 0.3em;
         border-radius: 25px;
         background-color: white;
         margin-top: 25px;
-        -webkit-box-shadow: 2px 2px 14px 15px rgba(50, 50, 50, 0.21);
-        -moz-box-shadow:    2px 2px 14px 15px rgba(50, 50, 50, 0.21);
-        box-shadow:         2px 2px 14px 15px rgba(50, 50, 50, 0.21);
-        width: calc(33% - 0.6em - 40px);
+        -webkit-box-shadow: -1px 0px 19px 0px rgba(50, 50, 50, 0.39);
+        -moz-box-shadow:    -1px 0px 19px 0px rgba(50, 50, 50, 0.39);
+        box-shadow:         -1px 0px 19px 0px rgba(50, 50, 50, 0.39);
+        width: calc(33% - 0,6em - 40px);
         max-width: 245px;
     }
 
@@ -271,7 +268,6 @@ input::placeholder{
     /* Les plus populaires */
 
     .container2 {
-        flex: 1;
         margin-top: 80px;
         margin-left: 40px;
         background-color: #f2f2f2;
@@ -280,6 +276,7 @@ input::placeholder{
         padding-top: 2em;
         padding-right: 2em;
         padding-bottom: 2em;
+        width: calc(415px - 64px);
     }
 
     .cards2 {
@@ -292,15 +289,16 @@ input::placeholder{
     }
 
     .card2 {
-        -webkit-box-shadow: 2px 2px 14px 15px rgba(50, 50, 50, 0.21);
-        -moz-box-shadow:    2px 2px 14px 15px rgba(50, 50, 50, 0.21);
-        box-shadow:         2px 2px 14px 15px rgba(50, 50, 50, 0.21);
+        -webkit-box-shadow: -1px 0px 19px 0px rgba(50, 50, 50, 0.39);
+        -moz-box-shadow:    -1px 0px 19px 0px rgba(50, 50, 50, 0.39);
+        box-shadow:         -1px 0px 19px 0px rgba(50, 50, 50, 0.39);
         flex-wrap: wrap;
         padding: 0.3em;
         border-radius: 25px;
         display: flex;
         background-color: white;
         margin-top: 75px;
+        max-height: 146px;
     }
 
     .card2:nth-child(1) {
@@ -308,7 +306,7 @@ input::placeholder{
     }
 
     .desc {
-        margin-left: 25px;
+        margin-left: 15px;
         margin-top: -10px;
     }
 
@@ -317,7 +315,6 @@ input::placeholder{
         height: 134px;
         border-radius: 25px 0px 0px 25px;
     }
-
     /* Section activités */
     
     .section_activites{
@@ -415,9 +412,9 @@ input::placeholder{
       }
 
       .card_verticale, .card_horizontale_G, .card_horizontale_P, .card_horizontale_M{
-        -webkit-box-shadow: 2px 2px 14px 15px rgba(50, 50, 50, 0.21);
-        -moz-box-shadow:    2px 2px 14px 15px rgba(50, 50, 50, 0.21);
-        box-shadow:         2px 2px 14px 15px rgba(50, 50, 50, 0.21);
+        -webkit-box-shadow: -1px 0px 19px 0px rgba(50, 50, 50, 0.39);
+        -moz-box-shadow:    -1px 0px 19px 0px rgba(50, 50, 50, 0.39);
+        box-shadow:         -1px 0px 19px 0px rgba(50, 50, 50, 0.39);
       }
 
     /* Footer */
@@ -451,12 +448,21 @@ input::placeholder{
         flex: 1;
     }
 
+    .footer_flex2 p{
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+
+    .footer_flex2 p:nth-child(4){
+        margin-bottom: 50px;
+    }
+
     /* Résolution pour Iphone8 */
         @media only screen and (min-width: 320px)and (max-width:599px) {
 
             main{
-                margin-left: 10px;
-                margin-right: 10px;
+                margin-left: 0px;
+                margin-right: 0px;
             }
 
             .header{
@@ -511,6 +517,18 @@ input::placeholder{
                 margin-left: 0px;
             }
 
+            .ChercherHbtitre{
+                padding-left: 20px;
+            }
+
+            .ChercherHb{
+                padding-left: 20px;
+            }
+
+            .Rechercher{
+                padding-left: 20px;
+            }
+
             .site-search {
                 margin-top: 20px;
                 border:solid;
@@ -546,7 +564,8 @@ input::placeholder{
                 flex-wrap: wrap;
                 margin-top: 50px;
                 justify-content: space-between;
-                width: 100%;
+                width: 345px;
+                padding-left: 20px;
             }
 
             .filtres_titre{
@@ -558,6 +577,10 @@ input::placeholder{
                 margin: 0px;
                 margin-bottom: 7px;
                 margin-top: 8px;
+            }
+
+            .info{
+                padding-left: 20px;
             }
 
 
@@ -573,21 +596,24 @@ input::placeholder{
                 order: 2;
                 margin-top: 40px;
                 background-color: transparent;
-                padding-left: 25px;
+                width: 375px;
+                padding: 0px;
             }
 
             .container h2{
+                padding-left: 20px;
                 margin-left: 0px;
             }           
             
             .container h3{
+                padding-left: 20px;
                 margin-left: 0px;
                 font-size: 18px;
             }
 
             .cards{
-                margin-left: -15px;
                 width: 335px;
+                padding-left: 20px;
             }
 
             .card{
@@ -618,20 +644,33 @@ input::placeholder{
                 order: 1;
                 margin-top: 40px;
                 margin-left: 0px;
-                padding-left: 25px;
-                border-radius: 0px;
-                padding-right: 50px;
-                
+                padding: 0px;
+                border-radius: 0px;  
+                width: 375px;             
+            }
+
+            .container2 h2{
+                padding-left: 20px;
+                margin-bottom: 0px;
+                margin-top: 40px;
             }
 
             .cards2{
                 margin-left: 0px;
+                padding-left: 20px;
+                margin-top: 0px;
+                padding-bottom: 30px;
             }
 
             .card2{
                 width: 335px;
                 height: 145px;
                 padding: 0px;
+                margin-top: 10px;
+            }
+
+            .fa-chart-line{
+                padding-right: 20px;
             }
 
             .card_pic2{
@@ -648,6 +687,8 @@ input::placeholder{
 
             #activites {
                 font-size: 22px;
+                margin-left: 0px;
+                padding-left: 20px;
             }
 
             .bloc-activites{
@@ -664,11 +705,7 @@ input::placeholder{
 
             .cards_activites{
                 width: 100%;
-                margin: 10px 30px;
-            }
-
-            #activites{
-                margin: 0 0 0 30px;
+                justify-content: center;
             }
 
             .card_verticale{
@@ -682,7 +719,7 @@ input::placeholder{
             }
 
             .card_responsive{
-                width: 100%;
+                width: 335px;
                 height: 190px;
                 margin: 10px 0;
                 padding-bottom: 0px;
