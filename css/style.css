@@ -138,7 +138,7 @@ input::placeholder{
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 50px;
-        width: 75%;
+        width: 100%;
         /* justify-content: space-between;  */
     }
     
@@ -214,6 +214,10 @@ input::placeholder{
         padding-right: 2em;
         padding-bottom: 4em;
         max-width: 1100px;
+    }
+
+    .container h2{
+        margin-left: 20px;
     }
 
     .container h3 {
@@ -459,7 +463,6 @@ input::placeholder{
 
             .icone_map{
                 margin-left: 0px;
-                margin-right: 0px;
             }
 
             .site-search {
@@ -475,16 +478,20 @@ input::placeholder{
             }
 
             .Bouton_rechercher {
+                display: none;
+            }
+
+            .Bouton_loupe{
                 background-color: #0065fc;
                 border: none;
                 color: white;
                 margin-left: -4px;
-                padding: 15px 0px;
+                padding: 15px 20px;
                 text-align: center;
+                margin-left: -25px;
                 /* Retirer le soulignement */
-                text-decoration: none; 
                 font-size: 16px;
-                border-radius: 0px 45px 45px 0px;
+                border-radius: 15px 15px 15px 15px;
             }
 
             .filtres{
@@ -520,6 +527,45 @@ input::placeholder{
                 order: 2;
                 margin-top: 40px;
                 background-color: transparent;
+                padding-left: 25px;
+            }
+
+            .container h2{
+                margin-left: 0px;
+            }           
+            
+            .container h3{
+                margin-left: 0px;
+                font-size: 22px;
+            }
+
+            .cards{
+                margin-left: -15px;
+                width: 335px;
+            }
+
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                min-width: 335px;
+                min-height: 200px;
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-left: 0px;
+                font-size: 14px;
+            }
+
+            .card_pic{
+                width: 324px;
+                height: 115px;
+                padding-left: 5px;
+            }
+
+            .card_description{
+                display: flex;
+                flex-direction: column;
+                padding-left: 3px;
             }
 
             .container2{
@@ -529,7 +575,7 @@ input::placeholder{
                 padding-left: 25px;
                 border-radius: 0px;
                 padding-right: 50px;
-                width: auto;
+                
             }
 
             .cards2{
@@ -554,9 +600,25 @@ input::placeholder{
                 margin-left: 15px;
             }
 
-            .card_activité_verticale{
-                margin-bottom: 20px;
-                margin-top: 20px;
+            .contenair_activités h2{
+                margin-left: 20px;
+            }
+
+            .card_responsive{
+                min-width: 333px;
+                min-height: 190px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
+            .pic_responsive{
+                min-width: 333px;
+                min-height: 133px;
+                max-height: 133px;
+            }
+
+            .card_activité_horizontale:nth-child(1){
+                margin-bottom: 0px;
             }
 
             .footer_flex{
