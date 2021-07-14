@@ -236,6 +236,7 @@ input::placeholder{
         display: flex;
         flex-wrap: wrap;
         margin-left: 20px;
+        margin-right: 20px;
         padding: 0.3em;
         border-radius: 25px;
         background-color: white;
@@ -243,7 +244,7 @@ input::placeholder{
         -webkit-box-shadow: 2px 2px 14px 15px rgba(50, 50, 50, 0.21);
         -moz-box-shadow:    2px 2px 14px 15px rgba(50, 50, 50, 0.21);
         box-shadow:         2px 2px 14px 15px rgba(50, 50, 50, 0.21);
-        width: calc(33% - 0,6em - 40px);
+        width: calc(33% - 0.6em - 40px);
         max-width: 245px;
     }
 
@@ -330,7 +331,7 @@ input::placeholder{
         width: 100%;
         font-size: 22px;
       }
-      
+
       .cards_activites {
         display: flex;
         justify-content: space-between;
