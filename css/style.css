@@ -49,7 +49,7 @@ a {
 }
 
 .menu_nav a:hover {
-    border-top: 2px solid #0065fc;
+    border-top: 2px solid red;
     color: #0065fc;
     padding-top: 30px;
     font-weight: bold;
@@ -178,7 +178,8 @@ input::placeholder {
 
 /* Phrase informative */
 .info {
-    margin-top: 50px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 /* Créer une transparence pour fond bleu de l'icone info */
@@ -199,7 +200,6 @@ input::placeholder {
 }
 
 .container {
-    margin-top: 80px;
     background-color: #f2f2f2;
     border-radius: 25px;
     padding-left: 2em;
@@ -265,7 +265,6 @@ input::placeholder {
 /* Les plus populaires */
 
 .container2 {
-    margin-top: 80px;
     margin-left: 40px;
     background-color: #f2f2f2;
     border-radius: 25px;
@@ -472,6 +471,7 @@ input::placeholder {
         }
 
         .container2 {
+            margin-top: 35px;
             margin-left: 0;
         }
 
@@ -729,7 +729,7 @@ input::placeholder {
 
             .container2 {
                 order: 1;
-                margin-top: 40px;
+                margin-top: 35px;
                 margin-left: 0px;
                 padding: 0px;
                 border-radius: 0px;
